@@ -7,19 +7,48 @@ body {
     margin: 0;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    border-style: solid;
+.row {
+    /* border-style: solid;
     border-width: 0.1em;
-    border-color: black;
+    border-color: black; */
     margin: 0;
+    margin-right: 0;
+    margin-left: 0;
     align-items: center;
     justify-content: center;
     padding: 10em;
+    font-size: 2em;
 }
 
 .fade {
     display: block;
-    padding: 20em;
+    padding: 10em;
+}
+
+.timeline:before {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    border-left: 1px solid black;
+    transform: translate(-50%);
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline li {
+    padding: 5em;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.timeline li.right {
+    width: 50%;
+    margin-right: 0;
+    margin-left: auto;
 }
