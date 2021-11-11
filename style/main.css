@@ -56,16 +56,25 @@ img {
 
 .timeline li {
     /* border: 1px solid black; */
-    width: 49%;
+    width: 39%;
     min-width: 300px;
     background-color: white;
-    padding: 5rem;
+    padding: 5%;
 }
 
 
 .timeline li.right {
-    width: 49%;
+    width: 39%;
     margin-right: 0;
     margin-left: auto;
     text-align: right;
+    padding: 5%;
+}
+
+.hanger {
+    width: 500px;
+    position: absolute;
+    opacity: 0.5;
+    -webkit-filter: drop-shadow(3px 3px 0 black);
+    filter: drop-shadow(3px 3px 0 black);
 }

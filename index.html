@@ -8,17 +8,38 @@
   <link rel="stylesheet" href="style/main.css">
 
   <!-- Add Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
+
+  <header class="navbar position-fixed navbar-expand navbar-light bg-light flex-column flex-md-row bd-navbar" style="width: 100%; z-index: 1000">
+    <a class="navbar-brand mr-0 mr-md-2" href="/index" aria-label="Bootstrap">Mindscapes</a>
+  
+    <div class="navbar-nav-scroll">
+      <ul class="navbar-nav bd-navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link " href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#phase-1">Phase 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#phase-2">Phase 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#timeline">Timeline</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
   <div class="container-fluid">
 
     <div class="row slide page">
@@ -30,7 +51,15 @@
     <div class="row fade">
       <img src="images/image3.jpg">
     </div>
+
+    <!------ Work around to add optional space on mobile------------->
+    <div id="project"></div>
+    <div style="height: 100px" class="d-lg-none"></div>
+    <!---------------------------------------------------->
+
+
     <div class="row slide page">
+      <!-- <img class="hanger" src="images/Waves-removebg-preview.png"> -->
       <div class="fade">
       MINDSCAPES is a collaborative project by drawing and installation artist Maria Teresa Ortoleva and computer scientist and data visualization expert Dr. Rita Borgo, Head of the Human Centred Computing (HCC) research group and Champion of the Urban Living Hub in the Department of Informatics at King’s College London. Mindscapes engages with research in data visualisation, urban informatics and mental wellbeing, exploring the potential of using the art languages of sculpture and installation to translate urban data into three-dimensional space, creating immersive and empathic environments. 
       </div>
@@ -40,6 +69,11 @@
       The project deepens Ortoleva’s ongoing interest in EEG records of brainwaves that occur during elusive moments of our imaginative consciousness: from fancy to remembrance, hypnagogia and dream, and intersects Dr. Borgo’s research on …(...add…)
       Working together they aim at… ...research in data spatialisation and how visualising the mind through material/experientiable objects that inhabit the space of our perception/body can widen the understanding and empower with further awareness of mental wellbeing.
     </div>
+
+    <!------ Work around to add optional space on mobile------------->
+    <div id="phase-1"></div>
+    <div style="height: 100px" class="d-lg-none"></div>
+    <!---------------------------------------------------->
 
     <div class="row slide">
       <div class="fade"><h1>Phase 1</h1></div>
@@ -52,6 +86,12 @@
         Our initial intention was to consider data from urban informatics that may address the divide between productive work activities and activities that engage the visual mind in a non-utilitarian way (leisure, culture, sleep and more), with attention to the different patterns across diverse groups and the consequent impact on wellbeing. Once again because of the pandemic, it became relevant to include where and when the recorded activities happened wihtin the home or in a workplace, outdoors and in green areas or indoors. Acknowledging the new factors brought about by the pandemic, we hope to expand to comment on the relevance of imaginative moments as a coping method to the situation.
       </div>
     </div>
+
+    <!------ Work around to add optional space on mobile------------->
+    <div id="phase-2"></div>
+    <div style="height: 100px" class="d-lg-none"></div>
+    <!---------------------------------------------------->
+
     <div class="row slide">
       <div class="fade"><h1>Phase 2</h1></div>
       <img class="fade" src="images/image2.jpg">
@@ -70,6 +110,11 @@
         DR RITA BORGO [Add Bio]
       </div>
     </div>
+
+    <!------ Work around to add optional space on mobile------------->
+    <div id="timeline"></div>
+    <div style="height: 100px" class="d-lg-none"></div>
+    <!---------------------------------------------------->
 
     <div class="row slide">
       <div class="text-center">
@@ -115,5 +160,7 @@
       </div>
     </div>
   </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
